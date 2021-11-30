@@ -1,3 +1,3 @@
 const addNewPost = require("./addNewPost");
 
-addNewPost('courtney')
+addNewPost('Simon is losing his mind')

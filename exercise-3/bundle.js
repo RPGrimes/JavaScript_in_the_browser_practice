@@ -14,11 +14,16 @@
         newPostEl.id = "post-" + newId;
         document.body.appendChild(newPostEl);
       };
-      module.exports = addNewPost2;
+      var button = document.querySelector("#add-post-btn");
+      button.addEventListener("click", () => {
+        const newPostContent = document.querySelector("#new-post-content").value;
+        addNewPost2(newPostContent);
+      });
+      module.exports = addNewPost2, button;
     }
   });
 
   // index.js
   var addNewPost = require_addNewPost();
-  addNewPost("courtney");
+  addNewPost("Simon is losing his mind");
 })();

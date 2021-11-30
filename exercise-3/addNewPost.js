@@ -9,4 +9,10 @@ const addNewPost = (title) => {
   document.body.appendChild(newPostEl);
 }
 
-module.exports = addNewPost;
+const button = document.querySelector('#add-post-btn');
+  button.addEventListener('click', () => {
+    const newPostContent = document.querySelector('#new-post-content').value;
+    addNewPost(newPostContent);
+});
+
+module.exports = addNewPost, button;
