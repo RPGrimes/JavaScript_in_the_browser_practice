@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github information loader</title>
+</head>
+  <body>
+    <form>
+      Enter a github name repo (e.g sinatra/sinatra)
+      <input type="text" id="repo-name-input" />
+      <input type="button" id="repo-submit" value="Load info" />
+    </form>
+
+    <h1 id="repo-name"></h1>
+
+    <img id="repo-image" />
+
+    <p id="repo-description"></p>
+    <p id="repo-language"></p>
+
+    <a id="repo-link">Open the repo page on Github</a>
+
+    <script type="text/javascript" src="bundle.js" ></script>
+  </body>
+</html>
